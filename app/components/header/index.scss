@@ -1,0 +1,24 @@
+header {
+  .hdr-furniture-img {
+    width: 100%;
+    height: 100%
+  }
+
+  #desktop-header {
+    display: block
+  }
+
+  #mobile-header {
+    display: none
+  }
+
+  @media (max-width: 600px) {
+    #desktop-header {
+      display: none
+    }
+
+    #mobile-header {
+      display: block
+    }
+  }
+}

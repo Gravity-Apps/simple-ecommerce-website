@@ -1,0 +1,29 @@
+#call-to-action-container {
+  text-align: center;
+  background-image: url('/assets/call-to-action/call-to-action-bg.png');
+
+  #call-to-action-content {
+    padding-top: 160px;
+    padding-bottom: 112px;
+  }
+
+  .call-to-action-bttn {
+    padding: 15px 40px;
+    background-color: #23A6F0;
+    color: #FFF;
+  }
+
+  .description-line {
+    font-weight: 400;
+    color: #737373;
+    max-width: 80%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h6 {
+    margin-bottom: 30px
+  }
+}

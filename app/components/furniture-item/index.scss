@@ -1,0 +1,55 @@
+.fi-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .furniture-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .furniture-img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .label-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    @media (max-width: 600px) {
+      .furniture-img {
+        height: 300px;
+        width: 332px;
+      }
+
+      .label-box {
+        left: 24px;
+      }
+
+      .large-font {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 425px) {
+      .label-box {
+        left: 24px
+      }
+    }
+
+    @media (max-width: 375px) {
+      .label-box {
+        left: 0
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.product-item {
+  text-align: center;
+  width: 183px;
+  cursor: pointer;
+
+  .description-box {
+    & * {
+      font-weight: 700;
+    }
+
+    &>* {
+      margin-bottom: 10px;
+    }
+
+    padding: 25px 25px 35px 25px;
+
+    .price-box>* {
+      display: inline-block;
+      margin-left: 4px;
+    }
+  }
+}
+
+.load-more-bttn {
+  padding: '15px 40px 15px 40px';
+  color: '#23A6F0';
+}
