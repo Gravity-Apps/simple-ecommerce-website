@@ -53,8 +53,8 @@ const ProductsList: React.FC<IProductsList> = ({ includePagination }) => {
   return <Box>
     <Grid container id='products-list' padding={3}>
       {
-        products.list.map(product => (
-          <Grid item sm={12 / 5} xs={12} display='flex' justifyContent='center'>
+        products.list.map((product, key) => (
+          <Grid item key={`${key}--${product.id}--${product.title}`} sm={12 / 5} xs={12} display='flex' justifyContent='center'>
             <ProductItem product={product} />
           </Grid>
         ))

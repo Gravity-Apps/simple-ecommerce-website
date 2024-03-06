@@ -51,7 +51,7 @@ const ProductDetails: React.FC<IProductDetails> = ({ params }) => {
                 </Box>
                 <Stack direction='row' spacing={2}>
                   {
-                    selectedProduct?.images.slice(1, selectedProduct?.images.length).map(image => <Box className='next-images'><img src={image} /></Box>)
+                    selectedProduct?.images.slice(1, selectedProduct?.images.length).map((image, key) => <Box key={`prdct-img--${key}`} className='next-images'><img src={image} /></Box>)
                   }
                 </Stack>
               </Box>

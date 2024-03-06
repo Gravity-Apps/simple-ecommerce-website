@@ -24,9 +24,9 @@ const TestimonialsSection = () => {
         </Box>
       </Grid>
       <Grid item sm={6} xs={12}>
-        {/* <Box>
-          <img src='/assets/testimonials/9-image-block.png' />
-        </Box> */}
+        <Box>
+          <img src='/assets/testimonials/9-image-block.png' width='100%' />
+        </Box>
       </Grid>
     </Grid>
   </Container>

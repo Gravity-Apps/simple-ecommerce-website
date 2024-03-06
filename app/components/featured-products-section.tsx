@@ -49,8 +49,8 @@ const FeatureProductsSection = () => {
     </Box>
     <Grid container spacing={4}>
       {
-        FEATURED_PRODUCTS.map(featured => (
-          <Grid item sm={4} xs={12} display='flex' justifyContent='center' alignItems='center'>
+        FEATURED_PRODUCTS.map((featured, key) => (
+          <Grid item sm={4} xs={12} key={`${key}--${featured.title}`} display='flex' justifyContent='center' alignItems='center'>
             <FeaturedProductItem {...featured} />
           </Grid>
         ))
